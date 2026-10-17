@@ -181,32 +181,6 @@ export default function AeroMode() {
       busy = false;
     };
 
-    const tease = () => {
-      const canTease =
-        !busy &&
-        !root.classList.contains("aero") &&
-        !root.classList.contains("backrooms") &&
-        !reducedMotion.matches &&
-        document.visibilityState === "visible";
-
-      if (canTease) {
-        const pool = targets()
-          .filter(isOnScreen)
-          .filter((el) => !el.querySelector("[data-glitch]"));
-        const el = pool[Math.floor(Math.random() * pool.length)];
-        if (el) {
-          glitch(el);
-          later(() => el.classList.add("aero"), GLITCH_MS * 0.4);
-          later(() => {
-            glitch(el);
-            later(() => el.classList.remove("aero"), GLITCH_MS * 0.4);
-          }, 1400);
-        }
-      }
-
-      later(tease, 18000 + Math.random() * 22000);
-    };
-
     let typed = "";
     const onKeyDown = (event: KeyboardEvent) => {
       const target = event.target as HTMLElement | null;
@@ -249,7 +223,6 @@ export default function AeroMode() {
 
     window.addEventListener("keydown", onKeyDown);
     document.addEventListener("click", onClick);
-    later(tease, 9000 + Math.random() * 6000);
 
     return () => {
       window.removeEventListener("keydown", onKeyDown);

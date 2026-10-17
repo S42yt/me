@@ -130,10 +130,10 @@ void main() {
   p += vel * 0.85;
 
   vec2 q = vec2(
-    fbm(p + vec2(0.0, u_time * 0.10), 4),
-    fbm(p + vec2(5.2, 1.3) + vec2(u_time * 0.07, 0.0), 4)
+    fbm(p + vec2(0.0, u_time * 0.10), 3),
+    fbm(p + vec2(5.2, 1.3) + vec2(u_time * 0.07, 0.0), 3)
   );
-  float f = fbm(p + 2.2 * q + vec2(u_time * 0.03, -u_time * 0.05), 5);
+  float f = fbm(p + 2.2 * q + vec2(u_time * 0.03, -u_time * 0.05), 4);
 
   float painted = smoothstep(0.0, 0.5, dens);
   f += painted * 0.4;
@@ -220,7 +220,7 @@ export default function SmokeBg() {
     };
 
     const SIM_SCALE = 0.2;
-    const VIEW_SCALE = Math.min(0.42, 640 / Math.max(innerWidth, 1));
+    const VIEW_SCALE = Math.min(0.32, 480 / Math.max(innerWidth, 1));
     const FRAME_MS = 1000 / 24;
     let simW = 1;
     let simH = 1;

@@ -106,7 +106,6 @@ export default function RootLayout({
               left: "58%",
               background:
                 "radial-gradient(circle, oklch(24% 0.09 300 / 0.6) 0%, transparent 70%)",
-              filter: "blur(90px)",
             }}
           />
           <div
@@ -118,7 +117,6 @@ export default function RootLayout({
               left: "-12%",
               background:
                 "radial-gradient(circle, oklch(21% 0.07 275 / 0.55) 0%, transparent 70%)",
-              filter: "blur(90px)",
             }}
           />
           <SmokeBg />
