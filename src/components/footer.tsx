@@ -17,7 +17,7 @@ export default function Footer() {
           </span>
           <div className="flex items-center gap-2">
             <a
-              href="https://discord.gg/wtbcaw8AsT"
+              href="https://discord.opengl.tech"
               target="_blank"
               rel="noopener noreferrer"
               className="link-muted flex min-h-11 items-center gap-2 px-3 text-sm"
