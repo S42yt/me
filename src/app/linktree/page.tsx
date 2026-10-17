@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Icon from "@/components/icon";
-import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDiscord,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faHouse,
@@ -26,6 +30,12 @@ const LINKS = [
     hint: "S42yt",
     icon: faGithub,
     href: "https://github.com/S42yt",
+  },
+  {
+    label: "Instagram",
+    hint: "@S42yt",
+    icon: faInstagram,
+    href: "https://instagram.com/S42yt",
   },
   {
     label: "Ko-fi",
