@@ -47,7 +47,7 @@ export default function Home() {
     <>
       <GsapFx />
       <FloatingNav />
-      <div className="min-h-screen noise-overlay overflow-x-clip">
+      <div className="min-h-screen overflow-x-clip">
         <section id="home">
           <Hero />
 

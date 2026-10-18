@@ -39,7 +39,7 @@ export default function TradeCyclePage() {
   ];
 
   return (
-    <div className="min-h-screen py-20 noise-overlay">
+    <div className="min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-6">
         <AeroWindow title="TradeCycle - S42" icon="/icons/trade-cycle.png">
           <HeroSection />

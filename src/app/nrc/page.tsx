@@ -8,7 +8,7 @@ import ProjectsSection from "./components/projects";
 
 export default function NRCPage() {
   return (
-    <div className="min-h-screen py-20 noise-overlay">
+    <div className="min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-6">
         <AeroWindow title="NoRisk Client - S42" icon="/icons/nrc.png">
           <HeroSection />

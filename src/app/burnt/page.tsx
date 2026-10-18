@@ -75,7 +75,7 @@ export default function BurntPage() {
   ];
 
   return (
-    <div className="min-h-screen py-20 noise-overlay">
+    <div className="min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-6">
         <AeroWindow title="Burnt - S42" icon="/icons/biogg.png">
           <HeroSection />

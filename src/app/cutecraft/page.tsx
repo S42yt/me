@@ -60,7 +60,7 @@ export default function CuteCraftPage() {
   ];
 
   return (
-    <div className="min-h-screen py-20 noise-overlay">
+    <div className="min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-6">
         <AeroWindow title="CuteCraft - S42" icon="/icons/cutecraft-icon.png">
           <HeroSection />

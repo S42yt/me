@@ -1192,10 +1192,6 @@
   -webkit-text-stroke: 0;
 }
 
-.backrooms .noise-overlay::before {
-  display: none;
-}
-
 .backrooms .section-rule {
   height: 1px;
   background: repeating-linear-gradient(

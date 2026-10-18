@@ -176,7 +176,6 @@
     visibility 0s;
 }
 
-.noise-overlay:is(.aero, .aero *)::before,
 .giant-text:is(.aero, .aero *),
 .project-glow:is(.aero, .aero *) {
   display: none;
